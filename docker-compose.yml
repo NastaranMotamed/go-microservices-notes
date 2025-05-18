@@ -1,0 +1,14 @@
+services:
+  user-service:
+    build:
+      context: ./user-service
+    ports:
+      - "50052:50052"
+
+  note-service:
+    build:
+      context: ./note-service
+    ports:
+      - "50051:50051"
+    depends_on:
+      - user-service
