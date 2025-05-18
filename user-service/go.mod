@@ -1,16 +1,6 @@
 module github.com/nastaranmotamed/go-microservices-notes/user-service
 
-go 1.20
-
-require (
-	google.golang.org/grpc v1.72.1
-	google.golang.org/protobuf v1.36.6
-)
-
-
-go 1.23
-
-toolchain go1.24.2
+go 1.24.2
 
 require (
 	google.golang.org/grpc v1.72.1
